@@ -24,9 +24,9 @@ public class TimeTableReader {
     private static ArrayList<SchoolDay> schoolDays=new ArrayList<>();
 
 
-    public static void main(String args[]) throws IOException {
+    public static ArrayList<SchoolDay> readFile(File file) throws IOException {
 
-       workbook = new XSSFWorkbook(new FileInputStream("C:\\Users\\gudle\\IdeaProjects\\xlsxtimetableReader\\src\\ICS BTC 1 Nov 19_11th Nov.xlsx"));
+       workbook = new XSSFWorkbook(new FileInputStream(file));
         sheet = workbook.getSheetAt(0);
         mergedRegions = sheet.getMergedRegions();
         Collections.sort(mergedRegions, new CellRangeAddressComperator());
@@ -64,7 +64,7 @@ public class TimeTableReader {
         //System.out.println( "Text in the area:");
         //System.out.println();
 
-
+    return schoolDays;
 
     }
 
