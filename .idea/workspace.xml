@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7189c6f7-aa8c-477f-a445-3e452f47650e" name="Default Changelist" comment="this commit is to add the integration between the ui and the logic of the app">
+    <list default="true" id="7189c6f7-aa8c-477f-a445-3e452f47650e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/NewClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -9,20 +10,8 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Lesson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/MergedRegion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/RowOfClasses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SchoolDay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/SchoolHour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TimeTableReader$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TimeTableReader$CellRangeAddressComperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/TimeTableReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/TimeTableReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/TimeTableReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/TimeTableReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/TimeTableReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,8 +171,17 @@
       <updated>1592837522634</updated>
       <workItem from="1600334504036" duration="1086000" />
       <workItem from="1606034403509" duration="4282000" />
-      <workItem from="1606043717460" duration="7497000" />
+      <workItem from="1606043717460" duration="16541000" />
+      <workItem from="1606202516798" duration="27000" />
     </task>
+    <task id="LOCAL-00001" summary="this commit is to add the integration between the ui and the logic of the app">
+      <created>1606122743189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606122743189</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,7 +192,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -229,10 +229,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="137" y="246" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1603297622832" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1606122347870">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1606123766621">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1606122347870" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1606123766621" />
     <state x="167" y="65" key="DiffContextDialog" timestamp="1606122199887">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -241,38 +241,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606034580413" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1606121693256">
+    <state width="1323" height="194" key="GridCell.Tab.0.bottom" timestamp="1606134601105">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606121693256" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1606121693256">
+    <state width="1323" height="194" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606134601105" />
+    <state width="1323" height="194" key="GridCell.Tab.0.center" timestamp="1606134601104">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1606121693256" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1606121693256">
+    <state width="1323" height="194" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1606134601104" />
+    <state width="1323" height="194" key="GridCell.Tab.0.left" timestamp="1606134601104">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1606121693256" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1606121693256">
+    <state width="1323" height="194" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1606134601104" />
+    <state width="1323" height="194" key="GridCell.Tab.0.right" timestamp="1606134601105">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606121693256" />
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1606045246591">
+    <state width="1323" height="194" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606134601105" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1606133937862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606045246591" />
-    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1606045246590">
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606133937862" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1606133937862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1606045246590" />
-    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1606045246590">
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1606133937862" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1606133937862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1606045246590" />
-    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1606045246590">
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1606133937862" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1606133937862">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1606045246590" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1606133937862" />
     <state x="348" y="82" key="NewModule_or_Project.wizard" timestamp="1603299330316">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -281,6 +281,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="326" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606042631074" />
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1606122760095">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1606122760094" />
     <state x="398" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1600334529464">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
