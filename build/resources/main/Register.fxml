@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="658.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.timetablereader.app.Register">
+    <children>
+        <Label layoutX="273.0" layoutY="26.0" prefHeight="17.0" prefWidth="126.0" text="Registration" textAlignment="CENTER" textFill="#152c65" wrapText="true">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="65.0" layoutY="97.0" prefHeight="27.0" prefWidth="86.0" text="First Name :" textFill="#152c65">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="firstName" focusColor="#40a881" labelFloat="true" layoutX="208.0" layoutY="89.0" prefHeight="25.0" prefWidth="272.0" promptText="First name">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </JFXTextField>
+        <Label layoutX="65.0" layoutY="148.0" prefHeight="27.0" prefWidth="86.0" text="Last Name :" textFill="#152c65">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="lastName" focusColor="#40a881" labelFloat="true" layoutX="208.0" layoutY="147.0" prefHeight="25.0" prefWidth="272.0" promptText="Last name">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </JFXTextField>
+        <Label layoutX="61.0" layoutY="214.0" prefHeight="27.0" prefWidth="95.0" text="Date of Birth:" textFill="#152c65">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <JFXDatePicker fx:id="dateOfBirth" layoutX="208.0" layoutY="228.0" prefHeight="25.0" prefWidth="272.0" promptText="Date of Birth" />
+        <JFXTextField fx:id="email" focusColor="#40a881" labelFloat="true" layoutX="208.0" layoutY="276.0" prefHeight="25.0" prefWidth="272.0" promptText="Email">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </JFXTextField>
+        <Label layoutX="61.0" layoutY="327.0" prefHeight="27.0" prefWidth="86.0" text="Password :" textFill="#152c65">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="61.0" layoutY="277.0" prefHeight="27.0" prefWidth="86.0" text="Email :" textFill="#152c65">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="61.0" layoutY="392.0" prefHeight="25.0" prefWidth="134.0" text="Confirm Password :" textFill="#152c65">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="createAccount" buttonType="RAISED" layoutX="82.0" layoutY="478.0" onAction="#makeRegistration" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #152c65;" text="Create  Account" />
+        <Text fill="#0a0d0a" layoutX="224.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? " />
+        <JFXButton fx:id="createAccount1" buttonType="RAISED" layoutX="399.0" layoutY="538.0" onAction="#getLogin" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: green;" text="Login" />
+        <JFXPasswordField id=".jfx-password-field" fx:id="password" labelFloat="true" layoutX="208.0" layoutY="322.0" prefHeight="37.0" prefWidth="272.0" promptText="Password" stylesheets="">
+            <effect>
+                <Glow level="1.0" />
+            </effect>
+        </JFXPasswordField>
+        <JFXPasswordField id=".jfx-password-field" fx:id="confirmPassword" labelFloat="true" layoutX="208.0" layoutY="386.0" prefHeight="37.0" prefWidth="272.0" promptText="Confirm password" stylesheets="">
+            <effect>
+                <Glow level="1.0" />
+            </effect>
+        </JFXPasswordField>
+      <Icon content="PHONE_ANDROID" layoutX="230.0" layoutY="27.0" />
+    </children>
+</AnchorPane>

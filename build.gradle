@@ -19,6 +19,13 @@ repositories {
     mavenCentral()
 }
 
+repositories {
+    jcenter()
+    maven {
+        url 'http://nexus.gluonhq.com/nexus/content/repositories/releases'
+    }
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     implementation 'org.apache.poi:poi:4.1.2'
@@ -33,6 +40,17 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.6'
     // https://mvnrepository.com/artifact/org.json/json
 
+
+
+    compile 'com.jfoenix:jfoenix:9.0.8'
+
+    compile 'com.gluonhq:ignite-dagger:1.0.2'
+
+    // https://mvnrepository.com/artifact/com.gluonhq/charm-glisten
+    compile group: 'com.gluonhq', name: 'charm-glisten', version: '6.0.5'
+
+    // https://mvnrepository.com/artifact/com.gluonhq/charm-glisten
+    compile group: 'com.gluonhq', name: 'charm-glisten', version: '6.0.5'
 
 
 }
