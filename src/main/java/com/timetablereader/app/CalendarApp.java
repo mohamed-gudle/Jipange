@@ -21,10 +21,18 @@ import com.calendarfx.model.Calendar.Style;
 import com.calendarfx.model.CalendarSource;
 import com.calendarfx.model.Entry;
 import com.calendarfx.view.CalendarView;
+import com.google.gson.Gson;
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import org.bson.Document;
+
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -33,13 +41,17 @@ import java.util.ArrayList;
 public class CalendarApp{
 
     private static ArrayList<SchoolDay> schoolDays;
+    private MongoConnection connection=new MongoConnection();
+    private MongoDatabase init = connection.init();
+    private MongoCollection schoolDayTable = connection.getCollection("day");
+
     public void setSchoolDays(ArrayList<SchoolDay> schoolDays) {
         CalendarApp.schoolDays =schoolDays;
 
     }
 
 
-    public void init(Stage primaryStage) throws Exception {
+    public void  init(Stage primaryStage) throws Exception {
         CalendarView calendarView = new CalendarView();
 
         Calendar classes = new Calendar(" Classes");
@@ -148,15 +160,6 @@ public class CalendarApp{
                     entry.changeStartDate(localDate);
                     entry.changeEndDate(localDate);
 
-
-
-
-
-
-
-
-
-
                     switch (i)
                     {
                         case 0:{
@@ -221,7 +224,17 @@ public class CalendarApp{
             localDate=monday;
             j++;
 
+
+            Gson gson = new Gson();
+            String json = gson.toJson(day);
+            // Parse to bson document and insert
+            Document doc = Document.parse(json);
+
+            schoolDayTable.insertOne(doc);
+
         }
+
+
 
 
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7189c6f7-aa8c-477f-a445-3e452f47650e" name="Default Changelist" comment="">
+    <list default="true" id="7189c6f7-aa8c-477f-a445-3e452f47650e" name="Default Changelist" comment="this commit connects the application to mongodb and writes the school day data to a collection in the database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,10 +282,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1606043147969" />
-    <state x="532" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1598980070476">
+    <state x="532" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1606225943884">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="532" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.768@0.0.1366.768" timestamp="1598980070476" />
+    <state x="532" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.768@0.0.1366.768" timestamp="1606225943884" />
     <state x="137" y="246" width="408" height="291" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603297622832">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -341,14 +342,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="348" y="82" key="NewModule_or_Project.wizard/0.0.1366.768@0.0.1366.768" timestamp="1603299330316" />
-    <state x="326" y="0" key="SettingsEditor" timestamp="1606042631074">
+    <state x="451" y="107" key="RollbackChangesDialog" timestamp="1606225669712">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="326" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606042631074" />
+    <state x="451" y="107" key="RollbackChangesDialog/0.0.1366.768@0.0.1366.768" timestamp="1606225669712" />
+    <state x="326" y="0" key="SettingsEditor" timestamp="1606225641980">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="326" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1606225641980" />
     <state x="275" y="106" key="Vcs.Push.Dialog.v2" timestamp="1606221665146">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1606221665146" />
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606226009826">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1606226009826" />
     <state x="398" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1600334529464">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
