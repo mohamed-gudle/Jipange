@@ -21,7 +21,6 @@ import com.calendarfx.model.Calendar.Style;
 import com.calendarfx.model.CalendarSource;
 import com.calendarfx.model.Entry;
 import com.calendarfx.view.CalendarView;
-import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
@@ -147,6 +146,7 @@ public class CalendarApp{
                     entry.setTitle(hour.getLesson().getName() + " :" + hour.getLesson().getLecturerName());
                     entry.setId(lesson.getCode());
                     entry.changeStartDate(localDate);
+                    entry.changeEndDate(localDate);
 
 
 

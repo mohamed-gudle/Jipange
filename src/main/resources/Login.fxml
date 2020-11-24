@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.timetablereader.app.Login">
+   <children>
+      <JFXTextField fx:id="username" alignment="CENTER" layoutX="187.0" layoutY="200.0" prefHeight="25.0" prefWidth="242.0" promptText="Username" text="USERNAME" />
+      <JFXTextField fx:id="password" alignment="CENTER" layoutX="187.0" layoutY="267.0" prefHeight="25.0" prefWidth="242.0" promptText="Password" text="PASSWORD" />
+      <Text fx:id="title" layoutX="241.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JIPANGE" textAlignment="CENTER" wrappingWidth="117.13671875">
+         <font>
+            <Font name="Gill Sans MT Condensed" size="36.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="login" buttonType="RAISED" layoutX="181.0" layoutY="335.0" onAction="#attemptLogin" prefHeight="33.0" prefWidth="82.0" ripplerFill="#149040" style="-fx-background-color: #46b277;" text="Login" />
+      <JFXButton fx:id="register" buttonType="RAISED" layoutX="388.0" layoutY="335.0" onAction="#getRegistration" prefHeight="33.0" prefWidth="82.0" ripplerFill="#0c325b" style="-fx-background-color: grey;" text="Register" />
+      <Icon fx:id="icon" content="PERSON" layoutX="222.0" layoutY="86.0" prefHeight="43.0" prefWidth="59.0" />
+      <Text fx:id="text" layoutX="278.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Sign in" />
+   </children>
+</AnchorPane>
