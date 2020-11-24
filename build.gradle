@@ -35,6 +35,12 @@ dependencies {
     implementation 'com.calendarfx:view:11.8.3'
     // https://mvnrepository.com/artifact/com.calendarfx/calendar
     implementation 'com.calendarfx:calendar:11.8.3'
+    // https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '3.12.7'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    // https://mvnrepository.com/artifact/org.json/json
+
+
 
     compile 'com.jfoenix:jfoenix:9.0.8'
 
