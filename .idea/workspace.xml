@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7189c6f7-aa8c-477f-a445-3e452f47650e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/MongoConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -13,10 +12,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarApp$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +189,7 @@
       <workItem from="1606034403509" duration="4282000" />
       <workItem from="1606043717460" duration="16541000" />
       <workItem from="1606202516798" duration="27000" />
-      <workItem from="1606202704061" duration="13220000" />
+      <workItem from="1606202704061" duration="13546000" />
     </task>
     <task id="LOCAL-00001" summary="this commit is to add the integration between the ui and the logic of the app">
       <created>1606122743189</created>
@@ -217,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606203774704</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="this commit connects the application to mongodb and writes the school day data to a collection in the database">
+      <created>1606221352297</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606221352297</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +241,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="this commit is to add the integration between the ui and the logic of the app" />
-    <option name="LAST_COMMIT_MESSAGE" value="this commit is to add the integration between the ui and the logic of the app" />
+    <MESSAGE value="this commit connects the application to mongodb and writes the school day data to a collection in the database" />
+    <option name="LAST_COMMIT_MESSAGE" value="this commit connects the application to mongodb and writes the school day data to a collection in the database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="312" y="43" key="#Deployment" timestamp="1606203702810">
@@ -278,10 +281,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="471" y="215" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1366.768@0.0.1366.768" timestamp="1606221025014" />
-    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1606203771443">
+    <state x="264" y="0" key="CommitChangelistDialog2" timestamp="1606221337381">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1606203771443" />
+    <state x="264" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1606221337381" />
     <state x="167" y="65" key="DiffContextDialog" timestamp="1606122199887">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -290,22 +293,22 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606218727869" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1606221168331">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1606221491107">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606221168331" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1606221168331">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606221491107" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1606221491106">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1606221168331" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1606221168330">
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1606221491106" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1606221491106">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1606221168330" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1606221168331">
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1606221491106" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1606221491106">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606221168331" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606221491106" />
     <state width="1323" height="241" key="GridCell.Tab.1.bottom" timestamp="1606214768865">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
