@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="658.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.timetablereader.app.Register">
+<AnchorPane prefHeight="658.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.timetablereader.app.Controllers.Register">
     <children>
         <Label layoutX="273.0" layoutY="26.0" prefHeight="17.0" prefWidth="126.0" text="Registration" textAlignment="CENTER" textFill="#152c65" wrapText="true">
             <font>

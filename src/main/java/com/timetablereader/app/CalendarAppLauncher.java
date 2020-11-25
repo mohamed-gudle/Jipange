@@ -5,8 +5,8 @@ package com.timetablereader.app;
 
         public static void main(String[] args) {
             //System.setProperty("calendarfx.developer", "true");
+            JipangeApplication.main(args);
 
-            UploadView.main(args);
         }
     }
 
