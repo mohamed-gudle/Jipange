@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7189c6f7-aa8c-477f-a445-3e452f47650e" name="Default Changelist" comment="this commit connects the application to mongodb and writes the school day data to a collection in the database">
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/ExcelReader$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/ExcelReader$CellRangeAddressComperator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/ExcelReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/JipangeApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/data/RowOfClasses.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/data/SchoolDay.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/data/SchoolHour.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/utils/BaseScene.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/utils/JipangeView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/utils/MongoConnection.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/FileScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/SplashScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/JipangeApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/AsynchronousTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/BaseScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/JipangeView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FileScreen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SplashScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -31,42 +14,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarAppLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarAppLauncher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Lesson.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/data/Lesson.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/MergedRegion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/data/MergedRegion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/MongoConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/NewClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Register.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/RowOfClasses.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/SchoolDay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/SchoolHour.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/TimeTableReader$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/TimeTableReader$CellRangeAddressComperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/TimeTableReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/UploadView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarAppLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarAppLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/data/Lesson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/MergedRegion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/data/MergedRegion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/MongoConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/MongoConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/NewClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/RowOfClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/data/RowOfClasses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/SchoolDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/data/SchoolDay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/SchoolHour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/data/SchoolHour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/TimeTableReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/UploadView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/JipangeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/JipangeApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/FileScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/FileScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/JipangeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/JipangeApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FileScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FileScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +63,7 @@
         <option value="XML Properties File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -121,15 +74,21 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../tabibu-desktop" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -212,28 +171,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MongoConnection" />
         <item itemvalue="Application.CalendarAppLauncher" />
+        <item itemvalue="Application.MongoConnection" />
         <item itemvalue="Application.JipangeApplication" />
         <item itemvalue="Application.ExcelReader" />
         <item itemvalue="Application.TimeTableReader" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -251,6 +212,8 @@
       <workItem from="1606202704061" duration="14239000" />
       <workItem from="1606282763276" duration="173000" />
       <workItem from="1606283053741" duration="12533000" />
+      <workItem from="1606296156641" duration="430000" />
+      <workItem from="1606296651814" duration="8453000" />
     </task>
     <task id="LOCAL-00001" summary="this commit is to add the integration between the ui and the logic of the app">
       <created>1606122743189</created>
@@ -305,20 +268,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
@@ -347,10 +309,11 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="400" y="27" key="#TimeTableReader/0.0.1366.768@0.0.1366.768" timestamp="1598979754861" />
-    <state x="438" y="188" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606203728211">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="462" y="220" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606305346336">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="438" y="188" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1606203728211" />
+    <state x="462" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1606305346336" />
     <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1606293346164">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -383,22 +346,30 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606283153254" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1606295677106">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1398" height="123" key="GridCell.Tab.0.bottom" timestamp="1606309260949">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606295677106" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1606295677105">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1398" height="123" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606309260949" />
+    <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1606296134542" />
+    <state width="1398" height="123" key="GridCell.Tab.0.center" timestamp="1606309260947">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1606295677105" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1606295677104">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1398" height="123" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606309260947" />
+    <state width="1398" height="243" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1606296134541" />
+    <state width="1398" height="123" key="GridCell.Tab.0.left" timestamp="1606309260947">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1606295677104" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1606295677106">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1398" height="123" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606309260947" />
+    <state width="1398" height="243" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1606296134541" />
+    <state width="1398" height="123" key="GridCell.Tab.0.right" timestamp="1606309260948">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606295677106" />
+    <state width="1398" height="123" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606309260948" />
+    <state width="1398" height="243" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1606296134542" />
     <state width="1323" height="241" key="GridCell.Tab.1.bottom" timestamp="1606225278482">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

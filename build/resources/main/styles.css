@@ -1,0 +1,15 @@
+#main{
+    -fx-background-image: url(bg1.jpeg);
+    -fx-background-size: cover;
+
+}
+
+SVGGlyph{
+    -fx-background-image: url(jipange.png);
+    -fx-background-size: cover;
+
+
+}
+
+#fileSelector{
+}
