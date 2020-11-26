@@ -4,10 +4,15 @@ import com.jfoenix.controls.JFXButton;
 import com.timetablereader.app.CalendarView;
 import com.timetablereader.app.ExcelReader;
 import com.timetablereader.app.data.SchoolDay;
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
+import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -20,7 +25,7 @@ public class FileScreen {
     private static int currentScreen = 1;
 
     @FXML
-    private VBox mainContent;
+    private AnchorPane mainContent;
 
     @FXML
     private JFXButton fileSelector;
@@ -32,11 +37,12 @@ public class FileScreen {
     private File selectedFile;
 
 
-    ExcelReader excelReader = new ExcelReader();
+   static ExcelReader excelReader = new ExcelReader();
 
 
     private CalendarView calendarView=new CalendarView();
     private static Stage stage1;
+    private static ProgressBar progressBar;
 
 
     public static void setStage(Stage stage) {
@@ -80,19 +86,31 @@ public class FileScreen {
                 excelReader.setSheet(0);
                 mainContent.getChildren().clear();
                 if (excelReader.getNumberOfTables() > 1) {
-                    tableNumber = new TextField("Table number");
+                    tableNumber = new TextField();
                     mainContent.getChildren().add(tableNumber);
                 }
                 currentScreen++;
                 break;
             }
             case 3: {
-                int region = (Integer.parseInt(tableNumber.getText()) - 1) * 10 + 3;
-                excelReader.setRegion(23);
-                ArrayList<SchoolDay> schoolDays = excelReader.readFile();
+                int region = ((Integer.parseInt(tableNumber.getText()) - 1) * 20) + 3;
+                System.out.println(region);
+                excelReader.setRegion(region);
+
                 try {
-                    calendarView.setSchoolDays(schoolDays);
-                    calendarView.init(stage1);
+                    progressBar = new ProgressBar();
+                    mainContent.getChildren().add(progressBar);
+                   convertFileAsync convertFileAsync=new convertFileAsync();
+                   convertFileAsync.setCalendarView(calendarView);
+                   convertFileAsync.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
+                       @Override
+                       public void handle(WorkerStateEvent event) {
+                           calendarView.init(stage1);
+                           System.out.println("done *************");
+
+                       }
+                   });
+                   convertFileAsync.start();
 
                 }catch (Exception e){
                     e.printStackTrace();
@@ -103,6 +121,37 @@ public class FileScreen {
 
             }
 
+        }
+    }
+    private static class convertFileAsync extends Service{
+        CalendarView calendarView;
+
+        public void setCalendarView(CalendarView calendarView) {
+            this.calendarView = calendarView;
+        }
+
+        @Override
+        protected Task createTask() {
+            return new Task() {
+                @Override
+                protected Object call() throws Exception {
+                    try {
+
+                        ArrayList<SchoolDay> schoolDays = excelReader.readFile();
+                        progressBar.setProgress(0.25);
+                        calendarView.setSchoolDays(schoolDays);
+                        progressBar.setProgress(0.75);
+                        calendarView.convertFileToEntries();
+                        progressBar.setProgress(1);
+                    }
+                    catch (Exception e){
+                        e.printStackTrace();
+                        System.out.println(e.getMessage());
+
+                    }
+                    return null;
+                }
+            };
         }
     }
 }

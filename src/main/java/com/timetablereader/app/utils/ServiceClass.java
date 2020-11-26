@@ -1,4 +1,11 @@
 package com.timetablereader.app.utils;
 
-public class ServiceClass {
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
+
+public class ServiceClass extends Service {
+    @Override
+    protected Task createTask() {
+        return null;
+    }
 }

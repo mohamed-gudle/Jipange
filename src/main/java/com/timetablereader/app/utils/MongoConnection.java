@@ -15,7 +15,7 @@ public class MongoConnection {
 
     private static MongoDatabase database;
 
-    public MongoDatabase init() {
+    public static MongoDatabase init() {
         MongoClient mongoClient = MongoClients.create(
                 "mongodb+srv://oop2:oop2@oop2.h15yd.mongodb.net/TimeTableReader?retryWrites=true&w=majority");
         database = mongoClient.getDatabase("TimeTableReader");
@@ -23,7 +23,7 @@ public class MongoConnection {
         return database;
 
     }
-    public MongoCollection getCollection (String collectionName){
+    public static MongoCollection getCollection (String collectionName){
         MongoCollection collection = database.getCollection(collectionName);
         return collection;
     }

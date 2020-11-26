@@ -1,11 +1,11 @@
 #main{
-    -fx-background-image: url(bg1.jpeg);
+    -fx-background-image: url(images/background-image.jpg);
     -fx-background-size: cover;
 
 }
 
 SVGGlyph{
-    -fx-background-image: url(jipange.png);
+    -fx-background-image: url(images/logo.jpg);
     -fx-background-size: cover;
 
 

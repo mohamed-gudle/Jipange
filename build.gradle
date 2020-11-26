@@ -52,5 +52,7 @@ dependencies {
     // https://mvnrepository.com/artifact/com.gluonhq/charm-glisten
     compile group: 'com.gluonhq', name: 'charm-glisten', version: '6.0.5'
 
+    compile group: 'org.controlsfx', name: 'controlsfx', version: '11.0.3'
+
 
 }

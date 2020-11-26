@@ -30,10 +30,17 @@ import com.timetablereader.app.data.SchoolDay;
 import com.timetablereader.app.data.SchoolHour;
 import com.timetablereader.app.utils.MongoConnection;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import org.bson.Document;
+import org.controlsfx.control.Notifications;
 
 
 import java.time.LocalDate;
@@ -46,6 +53,8 @@ public class CalendarView {
     private MongoConnection connection=new MongoConnection();
     private MongoDatabase init = connection.init();
     private MongoCollection schoolDayTable = connection.getCollection("day");
+    private StackPane stackPane;
+    private Notifications notification;
 
     public void setSchoolDays(ArrayList<SchoolDay> schoolDays) {
         CalendarView.schoolDays =schoolDays;
@@ -53,7 +62,7 @@ public class CalendarView {
     }
 
 
-    public void  init(Stage primaryStage) throws Exception {
+    public void  convertFileToEntries() throws Exception {
         com.calendarfx.view.CalendarView calendarView = new com.calendarfx.view.CalendarView();
 
         Calendar classes = new Calendar(" Classes");
@@ -124,6 +133,7 @@ public class CalendarView {
             }
         }
         final LocalDate monday=localDate;
+       // Image success=new Image("C:\\Users\\gudle\\IdeaProjects\\JipangeApp\\src\\main\\resources\\images\\remainder.jpeg");
         for (SchoolDay day:schoolDays) {
             int i=0;
             switch (j){
@@ -152,6 +162,7 @@ public class CalendarView {
                 }
 
             }
+
             for (SchoolHour hour:day.getSchoolHours()) {
                 Entry entry=new Entry();
                 if(!hour.isFree()) {
@@ -166,46 +177,152 @@ public class CalendarView {
                     {
                         case 0:{
                             entry.changeStartTime(LocalTime.of(8,15));
+                            if (LocalTime.now() == LocalTime.of(8, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                        //.graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
+
                             entry.changeEndTime(LocalTime.of(9,15));
                             break;
                         }
                         case 1:{
                             entry.changeStartTime(LocalTime.of(9,15));
+                            if (LocalTime.now() == LocalTime.of(9, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                       // .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
                             entry.changeEndTime(LocalTime.of(10,15));
                             break;
                         }
                         case 2:{
                             entry.changeStartTime(LocalTime.of(10,15));
+                            if (LocalTime.now() == LocalTime.of(10, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                      //  .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
                             entry.changeEndTime(LocalTime.of(11,15));
                             break;
                         }
                         case 3:{
                             entry.changeStartTime(LocalTime.of(11,15));
+                            if (LocalTime.now() == LocalTime.of(11, 21)){
+                                notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                     //   .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT)
+                                .onAction(new EventHandler<ActionEvent>() {
+                                    @Override
+                                    public void handle(ActionEvent event) {
+                                        System.out.println("output by notigicaton");
+                                    }
+                                });
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
                             entry.changeEndTime(LocalTime.of(12,15));
                             break;
                         }
                         case 4:{
                             entry.changeStartTime(LocalTime.of(12,15));
+                            if (LocalTime.now() == LocalTime.of(12, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                     //   .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.showConfirm();
+
+                            }
                             entry.changeEndTime(LocalTime.of(13,15));
                             break;
                         }
                         case 5:{
                             entry.changeStartTime(LocalTime.of(13,15));
+                            if (LocalTime.now() == LocalTime.of(13, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                     //   .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
                             entry.changeEndTime(LocalTime.of(14,15));
                             break;
                         }
                         case 6:{
                             entry.changeStartTime(LocalTime.of(14,15));
+                            if (LocalTime.now() == LocalTime.of(14, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                     //   .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
                             entry.changeEndTime(LocalTime.of(15,15));
                             break;
                         }
                         case 7:{
                             entry.changeStartTime(LocalTime.of(15,15));
+                            if (LocalTime.now() == LocalTime.of(15, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                     //   .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
                             entry.changeEndTime(LocalTime.of(16,15));
                             break;
                         }
                         case 8:{
                             entry.changeStartTime(LocalTime.of(16,15));
+                            if (LocalTime.now() == LocalTime.of(16, 5)){
+                                Notifications notification = Notifications.create()
+                                        .title("Time for " +hour.getLesson().getName())
+                                        .text("The class starts in 10 minutes. Go kill it !")
+                                    //    .graphic(new ImageView(success))
+                                        .hideAfter(Duration.seconds(6))
+                                        .position(Pos.TOP_RIGHT);
+                                notification.darkStyle();
+                                notification.show();
+
+                            }
                             entry.changeEndTime(LocalTime.of(17,15));
                             break;
                         }
@@ -227,22 +344,21 @@ public class CalendarView {
             j++;
 
 
-            Gson gson = new Gson();
+        /*    Gson gson = new Gson();
             String json = gson.toJson(day);
             // Parse to bson document and insert
             Document doc = Document.parse(json);
 
             schoolDayTable.insertOne(doc);
 
+         */
+
         }
 
 
-
-
-
-
-        StackPane stackPane = new StackPane();
+        stackPane = new StackPane();
         stackPane.getChildren().addAll(calendarView); // introPane);
+
 
         Thread updateTimeThread = new Thread("Calendar: Update Time Thread") {
             @Override
@@ -268,6 +384,9 @@ public class CalendarView {
         updateTimeThread.setDaemon(true);
         updateTimeThread.start();
 
+
+    }
+    public void init(Stage primaryStage) {
         Scene scene = new Scene(stackPane);
         primaryStage.setTitle("Calendar");
         primaryStage.setScene(scene);

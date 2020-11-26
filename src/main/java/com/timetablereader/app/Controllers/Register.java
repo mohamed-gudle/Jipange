@@ -1,8 +1,23 @@
 package com.timetablereader.app.Controllers;
 
+import com.gluonhq.charm.glisten.control.ProgressIndicator;
 import com.jfoenix.controls.*;
+import com.mongodb.client.MongoCollection;
+import com.timetablereader.app.data.User;
+import com.timetablereader.app.utils.MongoConnection;
+import javafx.concurrent.Service;
+import javafx.concurrent.Task;
+import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 
 import java.io.IOException;
@@ -10,6 +25,9 @@ import java.io.IOException;
 
 public class Register {
 
+    private ProgressIndicator progressIndicator=new ProgressIndicator();
+    @FXML
+    private AnchorPane mainContainer;
     @FXML
     private JFXTextField firstName;
 
@@ -144,13 +162,74 @@ public class Register {
 
     @FXML
     void getLogin(ActionEvent event) throws IOException {
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("Login.fxml"));
+        } catch (IOException e) {
+            e.printStackTrace();
+            e.getCause();
+            System.out.println(e.getMessage());
+        }
 
+        Node node = (Node) event.getSource();
+
+        Stage stage = (Stage) node.getScene().getWindow();
+        assert root != null;
+        stage.setScene(new Scene(root));
     }
 
 
     @FXML
-    void makeRegistration(ActionEvent event) {
+    void makeRegistration(ActionEvent event1) {
+        mainContainer.getChildren().forEach(child-> {
+            child.setOpacity(0);
+        });
+        progressIndicator.setLayoutX(220);
+        progressIndicator.setLayoutY(283);
+        mainContainer.getChildren().add(progressIndicator);
 
+
+        RegisterUserAsync userAsync=new RegisterUserAsync();
+        userAsync.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
+            @Override
+            public void handle(WorkerStateEvent event) {
+                FXMLLoader fxmlLoader=new FXMLLoader();
+                AnchorPane root = null;
+                try {
+                    root = fxmlLoader.load(getClass().getClassLoader().getResource("FileScreen.fxml"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
+                Node node = (Node) event1.getSource();
+
+                Stage stage = (Stage) node.getScene().getWindow();
+
+                FileScreen.setStage(stage);
+                Scene scene = new Scene(root);
+                scene.setFill(Color.TRANSPARENT);
+                stage.setScene(scene);
+            }
+        });
+        userAsync.start();
+
+    }
+    private class RegisterUserAsync extends Service {
+
+        @Override
+        protected Task createTask() {
+            return new Task() {
+                @Override
+                protected Object call() throws Exception {
+                    MongoConnection.init();
+                    MongoCollection user = MongoConnection.getCollection("user");
+                    User user1=new User(firstName.getText(),lastName.getText().toString(),dateOfBirth.toString(),email.getText().toString(),password.getText().toString());
+                    user1.registerUser(user1);
+                    return null;
+                }
+            };
+        }
     }
 
 }
