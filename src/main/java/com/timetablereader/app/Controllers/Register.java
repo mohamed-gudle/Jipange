@@ -206,7 +206,7 @@ public class Register {
 
                 Stage stage = (Stage) node.getScene().getWindow();
 
-                FileScreen.setStage(stage);
+
                 Scene scene = new Scene(root);
                 scene.setFill(Color.TRANSPARENT);
                 stage.setScene(scene);

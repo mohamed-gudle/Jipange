@@ -1,5 +1,6 @@
 package com.timetablereader.app.Controllers;
 
+import com.gluonhq.charm.glisten.control.ProgressIndicator;
 import com.jfoenix.controls.JFXButton;
 import com.timetablereader.app.CalendarView;
 import com.timetablereader.app.ExcelReader;
@@ -10,8 +11,8 @@ import javafx.concurrent.WorkerStateEvent;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.TextField;
+import javafx.scene.Node;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -25,6 +26,11 @@ public class FileScreen {
     private static int currentScreen = 1;
 
     @FXML
+    private Label fileName;
+    @FXML
+    private AnchorPane main;
+
+    @FXML
     private AnchorPane mainContent;
 
     @FXML
@@ -32,8 +38,11 @@ public class FileScreen {
 
     @FXML
     private JFXButton continueBtn;
+    @FXML
+    private Label label;
 
-    private TextField tableNumber, textField;
+    private Spinner<Integer> tableNumber;
+    private Spinner<Integer> sheetNumber;
     private File selectedFile;
 
 
@@ -42,16 +51,48 @@ public class FileScreen {
 
     private CalendarView calendarView=new CalendarView();
     private static Stage stage1;
-    private static ProgressBar progressBar;
+    private static ProgressIndicator progressIndicator=new ProgressIndicator();
+    private int numberOfSheets;
 
-
-    public static void setStage(Stage stage) {
-        stage1 = stage;
-    }
 
     @FXML
     void fileSelector(ActionEvent event) {
         selectedFile = new FileChooser().showOpenDialog(new Stage());
+        fileName.setText("file name:"+selectedFile.getName());
+        try {
+
+            excelReader.setWorkbook(selectedFile);
+            label.setText(selectedFile.getName());
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println(e.getMessage());
+
+        }
+        numberOfSheets = excelReader.getNumberOfSheets();
+        Node node = (Node) event.getSource();
+
+        stage1 = (Stage) node.getScene().getWindow();
+        if (numberOfSheets > 1) {
+
+            label.setText(numberOfSheets +" sheets in the file please select the one contains your table");
+            mainContent.getChildren().clear();
+            sheetNumber = new Spinner<Integer>();
+            SpinnerValueFactory<Integer> valueFactory = //
+                    new SpinnerValueFactory.IntegerSpinnerValueFactory(1, numberOfSheets, 1);
+
+            sheetNumber.setValueFactory(valueFactory);
+            sheetNumber.setLayoutX(91);
+            sheetNumber.setLayoutY(41);
+            mainContent.getChildren().add(sheetNumber);
+            currentScreen=2;
+            changeScreen(currentScreen);
+
+        }
+        else {
+            currentScreen=2;
+            changeScreen(currentScreen);
+        }
 
     }
 
@@ -63,43 +104,43 @@ public class FileScreen {
 
     public void changeScreen(int screenNumber) {
         switch (screenNumber) {
-            case 1: {
-                try {
-
-                    excelReader.setWorkbook(selectedFile);
-
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    System.out.println(e.getMessage());
-
-                }
-                mainContent.getChildren().clear();
-                if (excelReader.getNumberOfSheets() > 1) {
-                    textField = new TextField("sheetNumber");
-                    mainContent.getChildren().add(textField);
-
-                }
-                currentScreen++;
-                break;
-            }
             case 2: {
-                excelReader.setSheet(0);
+                if(numberOfSheets>1) {
+                    excelReader.setSheet((int) sheetNumber.getValue());
+                }
+                else {
+                    excelReader.setSheet(0);
+                }
+
                 mainContent.getChildren().clear();
-                if (excelReader.getNumberOfTables() > 1) {
-                    tableNumber = new TextField();
+
+                int numberOfTables = excelReader.getNumberOfTables();
+                if (numberOfTables > 1) {
+                    label.setText(numberOfTables+" tables found :select the table number for your timetable");
+                    tableNumber = new Spinner<Integer>();
+                    SpinnerValueFactory<Integer> valueFactory = //
+                            new SpinnerValueFactory.IntegerSpinnerValueFactory(1, numberOfTables, 1);
+
+                    tableNumber.setValueFactory(valueFactory);
+                    tableNumber.setLayoutX(91);
+                    tableNumber.setLayoutY(41);
                     mainContent.getChildren().add(tableNumber);
                 }
                 currentScreen++;
                 break;
             }
             case 3: {
-                int region = ((Integer.parseInt(tableNumber.getText()) - 1) * 20) + 3;
+                int region = (((int) tableNumber.getValue()) - 1) * 20 + 3;
                 System.out.println(region);
                 excelReader.setRegion(region);
 
                 try {
-                    progressBar = new ProgressBar();
-                    mainContent.getChildren().add(progressBar);
+                    main.getChildren().forEach(child-> {
+                        child.setOpacity(0);
+                    });
+                    progressIndicator.setLayoutX(260);
+                    progressIndicator.setLayoutY(283);
+                    main.getChildren().add(progressIndicator);
                    convertFileAsync convertFileAsync=new convertFileAsync();
                    convertFileAsync.setCalendarView(calendarView);
                    convertFileAsync.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
@@ -138,11 +179,12 @@ public class FileScreen {
                     try {
 
                         ArrayList<SchoolDay> schoolDays = excelReader.readFile();
-                        progressBar.setProgress(0.25);
+
                         calendarView.setSchoolDays(schoolDays);
-                        progressBar.setProgress(0.75);
+
                         calendarView.convertFileToEntries();
-                        progressBar.setProgress(1);
+
+
                     }
                     catch (Exception e){
                         e.printStackTrace();

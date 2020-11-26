@@ -7,39 +7,39 @@
     <list default="true" id="7189c6f7-aa8c-477f-a445-3e452f47650e" name="Default Changelist" comment="this commit connects the application to mongodb and writes the school day data to a collection in the database">
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/CalendarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen$convertFileAsync$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen$convertFileAsync$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen$convertFileAsync.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen$convertFileAsync.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/FileScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Register$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/Controllers/Register$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/JipangeApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/JipangeApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/utils/MongoConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/timetablereader/app/utils/MongoConnection.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/FileScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/FileScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/bg1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/CalendarView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/FileScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/FileScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/Controllers/SplashScreen.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/JipangeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/JipangeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/data/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/MongoConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/MongoConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/ServiceClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/ServiceClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/AsynchronousTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/BaseScene.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/JipangeView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/timetablereader/app/utils/ServiceClass.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/FileScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FileScreen.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SplashScreen.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jipange.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +223,7 @@
       <workItem from="1606283053741" duration="12533000" />
       <workItem from="1606296156641" duration="430000" />
       <workItem from="1606296651814" duration="8453000" />
-      <workItem from="1606367450147" duration="12155000" />
+      <workItem from="1606367450147" duration="21952000" />
     </task>
     <task id="LOCAL-00001" summary="this commit is to add the integration between the ui and the logic of the app">
       <created>1606122743189</created>
@@ -325,10 +325,10 @@
     </state>
     <state x="438" y="188" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1606203728211" />
     <state x="462" y="220" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1606305346336" />
-    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1606373392868">
+    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1606380777497">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1606373392868" />
+    <state x="488" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1606380777497" />
     <state x="532" y="253" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1606225943884">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -341,10 +341,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="471" y="215" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1366.768@0.0.1366.768" timestamp="1606221025014" />
-    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606376327015">
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606395165590">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1606376327015" />
+    <state x="413" y="132" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1606395165590" />
     <state x="222" y="0" key="CommitChangelistDialog2" timestamp="1606221725879">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -357,28 +357,28 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1606283153254" />
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1606379796994">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1606395064283">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606379796994" />
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1606395064283" />
     <state width="1398" height="123" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1606309260949" />
     <state width="1398" height="243" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1606296134542" />
-    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1606379796993">
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1606395064283">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1606379796993" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1606395064283" />
     <state width="1398" height="123" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1606309260947" />
     <state width="1398" height="243" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1606296134541" />
-    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1606379796993">
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1606395064283">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1606379796993" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1606395064283" />
     <state width="1398" height="123" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1606309260947" />
     <state width="1398" height="243" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1606296134541" />
-    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1606379796993">
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1606395064283">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606379796993" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1606395064283" />
     <state width="1398" height="123" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1606309260948" />
     <state width="1398" height="243" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1606296134542" />
     <state width="1323" height="241" key="GridCell.Tab.1.bottom" timestamp="1606225278482">
@@ -413,10 +413,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="106" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1606221665146" />
-    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606287136286">
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606393538858">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1606287136286" />
+    <state x="92" y="92" width="1182" height="584" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.768@0.0.1366.768" timestamp="1606393538858" />
     <state x="398" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1606283066345">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

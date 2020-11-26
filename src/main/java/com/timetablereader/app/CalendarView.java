@@ -133,7 +133,7 @@ public class CalendarView {
             }
         }
         final LocalDate monday=localDate;
-       // Image success=new Image("C:\\Users\\gudle\\IdeaProjects\\JipangeApp\\src\\main\\resources\\images\\remainder.jpeg");
+      // Image success=new Image("/resources/images/remainder.jpeg");
         for (SchoolDay day:schoolDays) {
             int i=0;
             switch (j){
@@ -226,7 +226,7 @@ public class CalendarView {
                         }
                         case 3:{
                             entry.changeStartTime(LocalTime.of(11,15));
-                            if (LocalTime.now() == LocalTime.of(11, 21)){
+                         //   if (LocalTime.now() == LocalTime.of(11, 21)){
                                 notification = Notifications.create()
                                         .title("Time for " +hour.getLesson().getName())
                                         .text("The class starts in 10 minutes. Go kill it !")
@@ -240,25 +240,30 @@ public class CalendarView {
                                     }
                                 });
                                 notification.darkStyle();
-                                notification.show();
+                                Platform.runLater(notification::show);
 
-                            }
+
+                          //  }
                             entry.changeEndTime(LocalTime.of(12,15));
                             break;
                         }
                         case 4:{
                             entry.changeStartTime(LocalTime.of(12,15));
-                            if (LocalTime.now() == LocalTime.of(12, 5)){
-                                Notifications notification = Notifications.create()
-                                        .title("Time for " +hour.getLesson().getName())
-                                        .text("The class starts in 10 minutes. Go kill it !")
-                                     //   .graphic(new ImageView(success))
-                                        .hideAfter(Duration.seconds(6))
-                                        .position(Pos.TOP_RIGHT);
-                                notification.darkStyle();
-                                notification.showConfirm();
+                            Notifications notification = Notifications.create()
+                                    .title("Time for " +hour.getLesson().getName())
+                                    .text("The class starts in 10 minutes. Go kill it !")
+                              //      .graphic(new ImageView(success))
+                                    .hideAfter(Duration.seconds(6))
+                                    .position(Pos.TOP_RIGHT)
+                                    .onAction(new EventHandler<ActionEvent>() {
+                                        @Override
+                                        public void handle(ActionEvent event) {
+                                            System.out.println("output by notigicaton");
+                                        }
+                                    });
+                            notification.darkStyle();
+                            Platform.runLater(notification::show);
 
-                            }
                             entry.changeEndTime(LocalTime.of(13,15));
                             break;
                         }
@@ -390,8 +395,8 @@ public class CalendarView {
         Scene scene = new Scene(stackPane);
         primaryStage.setTitle("Calendar");
         primaryStage.setScene(scene);
-
-
+       primaryStage.setWidth(600);
+       primaryStage.setHeight(700);
         primaryStage.show();
     }
 

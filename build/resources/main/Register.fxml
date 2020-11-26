@@ -64,7 +64,7 @@
                 <Font name="System Bold" size="14.0" />
             </font>
         </Label>
-        <JFXButton fx:id="createAccount" buttonType="RAISED" layoutX="82.0" layoutY="478.0" onAction="#makeRegistration" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #152c65;" text="Create  Account" />
+        <JFXButton fx:id="createAccount" buttonType="RAISED" layoutX="82.0" layoutY="478.0" onAction="#makeRegistration" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #152c65;" text="Create  Account" textFill="WHITE" />
         <Text fill="#0a0d0a" layoutX="224.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? " />
         <JFXButton fx:id="createAccount1" buttonType="RAISED" layoutX="399.0" layoutY="538.0" onAction="#getLogin" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: green;" text="Login" />
         <JFXPasswordField id=".jfx-password-field" fx:id="password" labelFloat="true" layoutX="208.0" layoutY="322.0" prefHeight="37.0" prefWidth="272.0" promptText="Password" stylesheets="">
